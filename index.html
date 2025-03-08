@@ -3,67 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roronoa Zoro - The Legendary Swordsman</title>
+    <title>Straw Hat Crew Blog</title>
     <style>
+        /* Custom Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Seaweed+Script&family=Open+Sans:wght@400;700&display=swap');
+
         body {
-            font-family: 'Trebuchet MS', sans-serif;
-            background-color: #0a0a0a;
-            color: #00ff99;
-            text-align: center;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #1e1e2f; /* Dark navy blue for a pirate vibe */
+            color: #fff;
         }
         header {
-            background-color: #222;
+            background-color: #3090d9; /* Gold color for the header */
+            color: #000;
+            text-align: center;
             padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-size: 3em;
+            font-family: 'Pirata One', cursive; /* Pirate-themed font */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-bottom: 5px solid #ffffff; /* Brown border for a rustic look */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        section {
-            padding: 30px;
-            max-width: 900px;
+        .header-img {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+            margin: 0 20px; /* Space between images and title */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            width: 80%;
             margin: auto;
+            padding: 20px;
         }
-        img {
-            width: 100%;
-            max-width: 450px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px #00ff99;
-        }
-        .quote {
-            font-style: italic;
-            font-size: 20px;
-            color: #ffcc00;
-            margin-top: 15px;
-        }
-        .fact {
-            background-color: #111;
-            padding: 15px;
+        .crew-member {
+            background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradient background */
             margin: 20px 0;
-            border-left: 5px solid #ffcc00;
-            font-size: 18px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        .crew-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+        .crew-member img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+            border: 3px solid #d4af37; /* Gold border for images */
+        }
+        .crew-member h2 {
+            margin: 0;
+            color: #d4af37; /* Gold color for titles */
+            font-family: 'Seaweed Script', cursive; /* Pirate-themed font for names */
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .crew-member p {
+            color: #ecf0f1; /* Light gray for readability */
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Unique colors for each crew member */
+        .crew-member:nth-child(1) { background: linear-gradient(135deg, #e74c3c, #c0392b); } /* Luffy */
+        .crew-member:nth-child(2) { background: linear-gradient(135deg, #27ae60, #2ecc71); } /* Zoro */
+        .crew-member:nth-child(3) { background: linear-gradient(135deg, #f1c40f, #f39c12); } /* Nami */
+        .crew-member:nth-child(4) { background: linear-gradient(135deg, #3498db, #2980b9); } /* Usopp */
+        .crew-member:nth-child(5) { background: linear-gradient(135deg, #e67e22, #d35400); } /* Sanji */
+        .crew-member:nth-child(6) { background: linear-gradient(135deg, #e84393, #c0392b); } /* Chopper */
+        .crew-member:nth-child(7) { background: linear-gradient(135deg, #8e44ad, #9b59b6); } /* Robin */
+        .crew-member:nth-child(8) { background: linear-gradient(135deg, #34495e, #2c3e50); } /* Franky */
+        .crew-member:nth-child(9) { background: linear-gradient(135deg, #1abc9c, #16a085); } /* Brook */
+        .crew-member:nth-child(10) { background: linear-gradient(135deg, #2980b9, #3498db); } /* Jinbe */
     </style>
 </head>
 <body>
-    <header>Roronoa Zoro - The Legendary Swordsman</header>
-    <section>
-        <img src="ZORO.avif" alt="Zoro">
-        <h2>Who is Roronoa Zoro?</h2>
-        <p>Zoro, the right-hand man of Monkey D. Luffy, is a swordsman whose only goal is to surpass Dracule Mihawk and become the greatest swordsman in the world.</p>
-        
-        <h2>Power & Abilities</h2>
-        <p>Mastering the Santoryu (Three-Sword Style), Zoro wields legendary swords like Wado Ichimonji, Sandai Kitetsu, and Enma, slicing through steel and even mountains.</p>
-        
-        <h2>Iconic Moments</h2>
-        <div class="fact">"Nothing happened." - Zoro endured unimaginable pain to protect his captain, proving his undying loyalty.</div>
-        <div class="fact">Zoro vs King - One of his most epic battles, showcasing his raw power and unmatched sword skills.</div>
-        
-        <h2>Famous Quote</h2>
-        <p class="quote">"Scars on the back are a swordsman's shame."</p>
-    </section>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Rc7rf_vnRWasOjfJFnYrCLNKEqvlt5Ep4w&s" alt="Straw Hat Jolly Roger" class="header-img">
+        <span>Straw Hat Crew Blog</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Rc7rf_vnRWasOjfJFnYrCLNKEqvlt5Ep4w&s" alt="Straw Hat Jolly Roger" class="header-img">
+    </header>
+    <div class="container">
+        <div class="crew-member">
+            <img src="https://i.pinimg.com/736x/50/08/ef/5008efb9df96969624d2674645027a3a.jpg" alt="Monkey D. Luffy">
+            <div>
+                <h2>Monkey D. Luffy</h2>
+                <p>Bounty: 3,000,000,000 Berries</p>
+                <p>Power: Gum-Gum Fruit (Gear 5 - Sun God Nika)</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="ZORO.avif" alt="Roronoa Zoro">
+            <div>
+                <h2>Roronoa Zoro</h2>
+                <p>Bounty: 1,111,000,000 Berries</p>
+                <p>Power: Three-Sword Style & Advanced Haki</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://images5.alphacoders.com/136/1364786.png" alt="Nami">
+            <div>
+                <h2>Nami</h2>
+                <p>Bounty: 366,000,000 Berries</p>
+                <p>Power: Weather Manipulation (Zeus & Climatact)</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://pm1.aminoapps.com/6785/fde95dc874da62ea0be40eb10be60347a50609eav2_00.jpg" alt="Usopp">
+            <div>
+                <h2>Usopp</h2>
+                <p>Bounty: 500,000,000 Berries</p>
+                <p>Power: Sniping & Plant-Based Weapons</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://wallpapers.com/images/hd/sanji-4k-dvx3t3dwdw69o2ku.jpg" alt="Sanji">
+            <div>
+                <h2>Sanji</h2>
+                <p>Bounty: 1,032,000,000 Berries</p>
+                <p>Power: Enhanced Leg Strength (Ifrit Jambe)</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://w0.peakpx.com/wallpaper/561/761/HD-wallpaper-chopper-anime-one-piece.jpg" alt="Tony Tony Chopper">
+            <div>
+                <h2>Tony Tony Chopper</h2>
+                <p>Bounty: 1,000 Berries</p>
+                <p>Power: Human-Human Fruit & Monster Point</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://c4.wallpaperflare.com/wallpaper/927/883/765/one-piece-anime-nico-robin-wallpaper-preview.jpg" alt="Nico Robin">
+            <div>
+                <h2>Nico Robin</h2>
+                <p>Bounty: 930,000,000 Berries</p>
+                <p>Power: Hana-Hana Fruit (Gigantesco Mano)</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://s1.zerochan.net/Franky.600.3508901.jpg" alt="Franky">
+            <div>
+                <h2>Franky</h2>
+                <p>Bounty: 394,000,000 Berries</p>
+                <p>Power: Cyborg Enhancements & Franky Shogun</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://images5.alphacoders.com/131/1312630.jpeg" alt="Brook">
+            <div>
+                <h2>Brook</h2>
+                <p>Bounty: 383,000,000 Berries</p>
+                <p>Power: Soul-Soul Fruit & Ice-Based Attacks</p>
+            </div>
+        </div>
+        <div class="crew-member">
+            <img src="https://w0.peakpx.com/wallpaper/786/689/HD-wallpaper-one-piece-jinbe-one-piece.jpg" alt="Jinbe">
+            <div>
+                <h2>Jinbe</h2>
+                <p>Bounty: 1,100,000,000 Berries</p>
+                <p>Power: Fish-Man Karate & Water Manipulation</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
